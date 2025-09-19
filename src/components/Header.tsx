@@ -19,20 +19,26 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Início
+            <a href="/industria" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+              Indústria
             </a>
-            <a href="#servicos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Serviços
+            <a href="/solucoes-datacenter" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+              Soluções Datacenter
             </a>
-            <a href="#sobre" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+            <a href="/conectividade" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+              Conectividade
+            </a>
+            <a href="/solucoes-complementares" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+              Soluções Complementares
+            </a>
+            <a href="/insights" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+              Insights
+            </a>
+            <a href="/sobre-nos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
               Sobre Nós
             </a>
-            <a href="#depoimentos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Depoimentos
-            </a>
-            <a href="#contato" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Contato
+            <a href="/contactos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+              Contactos
             </a>
           </nav>
 
@@ -56,20 +62,26 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              <a href="#inicio" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-                Início
+              <a href="/industria" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Indústria
               </a>
-              <a href="#servicos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-                Serviços
+              <a href="/solucoes-datacenter" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Soluções Datacenter
               </a>
-              <a href="#sobre" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+              <a href="/conectividade" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Conectividade
+              </a>
+              <a href="/solucoes-complementares" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Soluções Complementares
+              </a>
+              <a href="/insights" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Insights
+              </a>
+              <a href="/sobre-nos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
                 Sobre Nós
               </a>
-              <a href="#depoimentos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-                Depoimentos
-              </a>
-              <a href="#contato" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-                Contato
+              <a href="/contactos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Contactos
               </a>
               <Button className="btn-corporate w-full mt-4">
                 Solicitar Proposta
