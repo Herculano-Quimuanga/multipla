@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
+import {
   Calendar,
   User,
   ArrowRight,
@@ -37,7 +37,7 @@ const featuredArticles = [
     title: "O Papel das Redes Híbridas na Escalabilidade Empresarial",
     excerpt: "Como as redes híbridas podem revolucionar a escalabilidade e flexibilidade das empresas modernas.",
     date: "Janeiro 22, 2025",
-    author: "multipla.marketing", 
+    author: "multipla.marketing",
     category: "Tecnologia",
     featured: false
   }
@@ -56,7 +56,7 @@ const allArticles = [
     id: 5,
     title: "Segurança Cibernética: Tendências para 2025",
     excerpt: "As principais tendências de segurança cibernética que toda empresa deve conhecer.",
-    date: "Dezembro 20, 2024",
+    date: "Dezembro 20, 2025",
     author: "multipla.marketing",
     category: "Segurança"
   },
@@ -64,7 +64,7 @@ const allArticles = [
     id: 6,
     title: "IoT e Conectividade: O Futuro dos Negócios",
     excerpt: "Como a Internet das Coisas está moldando o futuro da conectividade empresarial.",
-    date: "Dezembro 15, 2024",
+    date: "Dezembro 15, 2025",
     author: "multipla.marketing",
     category: "IoT"
   },
@@ -72,7 +72,7 @@ const allArticles = [
     id: 7,
     title: "Backup e Recovery: Estratégias Essenciais",
     excerpt: "Melhores práticas para backup e recuperação de dados empresariais.",
-    date: "Dezembro 10, 2024",
+    date: "Dezembro 10, 2025",
     author: "multipla.marketing",
     category: "Backup"
   },
@@ -80,7 +80,7 @@ const allArticles = [
     id: 8,
     title: "Virtualização: Otimizando Recursos de TI",
     excerpt: "Como a virtualização pode reduzir custos e aumentar a eficiência de TI.",
-    date: "Dezembro 5, 2024",
+    date: "Dezembro 5, 2025",
     author: "multipla.marketing",
     category: "Virtualização"
   },
@@ -88,7 +88,7 @@ const allArticles = [
     id: 9,
     title: "5G e o Impacto na Transformação Digital",
     excerpt: "O papel revolucionário do 5G na aceleração da transformação digital.",
-    date: "Novembro 30, 2024",
+    date: "Novembro 30, 2025",
     author: "multipla.marketing",
     category: "5G"
   }
@@ -100,7 +100,7 @@ const Insights = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
@@ -123,12 +123,12 @@ const Insights = () => {
       {/* Featured Articles */}
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div className="text-srtar space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Artigos em
-              <span className="block text-primary">Destaque</span>
+              <span className="text-primary"> Destaque</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl">
               Os insights mais recentes e relevantes sobre tecnologia e transformação digital.
             </p>
           </div>
@@ -180,10 +180,10 @@ const Insights = () => {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-6">Categorias</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-6">Categorias</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {categories.map((category) => (
-                <Button 
+                <Button
                   key={category}
                   variant={category === "Todos" ? "default" : "outline"}
                   className="rounded-full"
@@ -201,8 +201,7 @@ const Insights = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Todos os
-              <span className="block text-primary">Artigos</span>
+              Todos os Artigos
             </h2>
           </div>
 
@@ -256,7 +255,7 @@ const Insights = () => {
       {/* Newsletter CTA */}
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center bg-gradient-primary rounded-2xl p-12 text-white">
+          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white">
             <div className="max-w-2xl mx-auto space-y-6">
               <h3 className="text-3xl font-bold">
                 Mantenha-se Sempre Atualizado
@@ -264,13 +263,13 @@ const Insights = () => {
               <p className="text-xl opacity-90">
                 Subscreva a nossa newsletter e receba os últimos insights tecnológicos diretamente no seu email
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input 
-                  type="email" 
-                  placeholder="Seu email" 
+              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto items-center">
+                <input
+                  type="email"
+                  placeholder="Seu email"
                   className="flex-1 px-4 py-3 rounded-lg text-foreground"
                 />
-                <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition-all">
+                <Button className="bg-white text-dark hover:bg-gray-100 font-semibold px-6 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
                   Subscrever
                 </Button>
               </div>

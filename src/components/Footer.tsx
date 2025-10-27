@@ -1,10 +1,10 @@
-import { 
-  Facebook, 
-  Twitter, 
-  Linkedin, 
-  Instagram, 
-  Mail, 
-  Phone, 
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Mail,
+  Phone,
   MapPin,
   ArrowUp
 } from "lucide-react";
@@ -24,25 +24,22 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">C</span>
+                <span className="text-white font-bold text-lg">M</span>
               </div>
-              <span className="text-xl font-bold">CorpTech</span>
+              <span className="text-xl font-bold">Multipla</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Transformamos desafios corporativos em soluções tecnológicas inovadoras. 
+              Transformamos desafios corporativos em soluções tecnológicas inovadoras.
               Sua parceira estratégica para o futuro digital.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.facebook.com/multipla.co.ao/" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.linkedin.com/company/multipla-angola/" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.instagram.com/multipla_ao/" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -81,20 +78,23 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary-glow mt-1 flex-shrink-0" />
                 <div>
-                  <p>Av. Paulista, 1000</p>
-                  <p>São Paulo - SP, 01310-100</p>
+                  <p>Av. Lenine, Torres Oceano A</p>
+                  <p>19º D - Luanda, Angola</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-glow flex-shrink-0" />
-                <span>+55 (11) 99999-9999</span>
+                <span>(+244) 923320730 | 916295077</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-glow flex-shrink-0" />
-                <span>contato@corptech.com.br</span>
+                <a href="mailto:sales@multipla.co.ao" target="_blank" rel="noopener noreferrer" className="text-primary-glow hover:underline">
+                  sales@multipla.co.ao
+                </a>
+
               </div>
             </div>
-            
+
             {/* Newsletter */}
             <div className="space-y-3">
               <h4 className="font-semibold">Newsletter</h4>
@@ -118,14 +118,14 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-gray-400 text-sm">
-              <p>&copy; 2024 CorpTech. Todos os direitos reservados.</p>
+              <p>&copy; 2025 Multipla. Todos os direitos reservados.</p>
               <div className="flex space-x-4">
                 <a href="#" className="hover:text-primary-glow transition-colors">Política de Privacidade</a>
                 <a href="#" className="hover:text-primary-glow transition-colors">Termos de Uso</a>
                 <a href="#" className="hover:text-primary-glow transition-colors">Cookies</a>
               </div>
             </div>
-            
+
             <Button
               onClick={scrollToTop}
               className="w-10 h-10 bg-white/10 hover:bg-primary rounded-full p-0"

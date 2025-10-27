@@ -2,10 +2,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  Server, 
-  Cloud, 
-  Shield, 
+import {
+  Server,
+  Cloud,
+  Shield,
   Monitor,
   HardDrive,
   Zap,
@@ -43,7 +43,7 @@ const datacenterServices = [
 const infrastructure = [
   "Climatização",
   "Monitorização",
-  "Vigilância", 
+  "Vigilância",
   "Acesso físico e lógico controlado",
   "Serviços de gestão",
   "Administração de sistemas",
@@ -54,7 +54,7 @@ const SolucoesDatacenter = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
@@ -84,8 +84,8 @@ const SolucoesDatacenter = () => {
                 <span className="block text-primary">soluções tecnológicas</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Em 2013, a Multipla lançou o serviço de outsourcing de Datacenter no país e com o passar do tempo as empresas 
-                reconhecem o benefício da terceirização de Datacenter, para além de ser económico, escalável e flexível 
+                Em 2013, a Multipla lançou o serviço de outsourcing de Datacenter no país e com o passar do tempo as empresas
+                reconhecem o benefício da terceirização de Datacenter, para além de ser económico, escalável e flexível
                 a terceirização de serviços especializados mitiga riscos.
               </p>
             </div>
@@ -109,7 +109,7 @@ const SolucoesDatacenter = () => {
 
             <div className="text-center bg-gradient-primary rounded-2xl p-8 text-white">
               <p className="text-lg">
-                A Multipla actualmente já montou datacenters com dimensão 
+                A Multipla actualmente já montou datacenters com dimensão
                 <span className="font-bold"> Tier III </span>
                 dentro das nossas infraestruturas e fora delas, através dos serviços tecnológicos integrados especiais.
               </p>
@@ -169,7 +169,7 @@ const SolucoesDatacenter = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center space-y-6 mb-12">
               <h2 className="text-4xl font-bold text-foreground">
-                Benefícios da 
+                Benefícios da
                 <span className="text-primary">Terceirização</span>
               </h2>
             </div>

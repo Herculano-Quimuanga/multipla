@@ -18,7 +18,7 @@ const CTA = () => {
                 </span>
               </h2>
               <p className="text-xl text-gray-200 max-w-2xl">
-                Entre em contato conosco hoje mesmo e descubra como podemos transformar 
+                Entre em contato conosco hoje mesmo e descubra como podemos transformar
                 os desafios da sua empresa em oportunidades de crescimento.
               </p>
             </div>
@@ -33,7 +33,7 @@ const CTA = () => {
                     </div>
                     <div>
                       <div className="font-semibold text-white">Ligue Agora</div>
-                      <div className="text-gray-200">+55 (11) 99999-9999</div>
+                      <div className="text-gray-200">(+244) 923320730 | 916295077</div>
                     </div>
                   </div>
                 </CardContent>
@@ -47,7 +47,10 @@ const CTA = () => {
                     </div>
                     <div>
                       <div className="font-semibold text-white">Envie um E-mail</div>
-                      <div className="text-gray-200">contato@corptech.com.br</div>
+                      <a href="mailto:sales@multipla.co.ao" target="_blank" rel="noopener noreferrer" className="text-primary-glow hover:underline">
+                        sales@multipla.co.ao
+                      </a>
+
                     </div>
                   </div>
                 </CardContent>

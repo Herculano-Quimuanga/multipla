@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  Users, 
-  Target, 
+import {
+  Users,
+  Target,
   Eye,
   Heart,
   Award,
@@ -51,7 +51,7 @@ const milestones = [
   },
   {
     year: "2025",
-    title: "Líder de Mercado",
+    title: "Estabilidade no Mercado",
     description: "Consolidação como referência em soluções tecnológicas empresariais"
   }
 ];
@@ -67,14 +67,14 @@ const SobreNos = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-5xl md:text-6xl font-bold text-white">
               Somos o Parceiro de
-              <span className="block text-primary-glow">Inovação das Empresas</span>
+              <span className="block text-primary-glow mt-1">Inovação das Empresas</span>
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Bem-vindo ao Universo Multipla. Há mais de 25 anos a olhar para o futuro.
@@ -94,18 +94,18 @@ const SobreNos = () => {
             <div className="text-center space-y-6">
               <h2 className="text-4xl md:text-5xl font-bold text-foreground">
                 Há mais de 25 anos
-                <span className="block text-primary">a olhar para o futuro</span>
+                <span className="block text-primary mt-1">a olhar para o futuro</span>
               </h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Somos uma empresa angolana, jovem e dinâmica que opera no mercado desde 1995 com a missão de prestar 
+                  Somos uma empresa angolana, jovem e dinâmica que opera no mercado desde 1995 com a missão de prestar
                   serviços de tecnologia e inovação para as empresas presentes no país.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Acompanhamos de perto as novas tendências e evoluções tecnológicas, para desta forma conseguir oferecer 
+                  Acompanhamos de perto as novas tendências e evoluções tecnológicas, para desta forma conseguir oferecer
                   uma solução ajustada às necessidades, ajudando os nossos clientes a serem as melhores versões de si mesmos.
                 </p>
               </div>
@@ -126,9 +126,9 @@ const SobreNos = () => {
 
             <div className="bg-card rounded-2xl p-8 shadow-corporate">
               <p className="text-lg text-muted-foreground leading-relaxed text-center">
-                Somos acima de tudo um <span className="font-semibold text-primary">parceiro confiável</span> para a jornada de inovação 
-                tecnológica para as empresas, idealmente posicionada para ajudar as empresas a prepararem os seus negócios para o futuro. 
-                Com uma mistura inteligente de <span className="font-semibold text-primary">pensamento ousado e execução confiável</span>, 
+                Somos acima de tudo um <span className="font-semibold text-primary">parceiro confiável</span> para a jornada de inovação
+                tecnológica para as empresas, idealmente posicionada para ajudar as empresas a prepararem os seus negócios para o futuro.
+                Com uma mistura inteligente de <span className="font-semibold text-primary">pensamento ousado e execução confiável</span>,
                 somos capazes de acelerar a inovação em cada etapa da cadeia de valor das empresas.
               </p>
             </div>
@@ -142,7 +142,7 @@ const SobreNos = () => {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Números que
-              <span className="block text-primary">Inspiram Confiança</span>
+              <span className="block text-primary mt-2">Inspiram Confiança</span>
             </h2>
           </div>
 
@@ -167,8 +167,8 @@ const SobreNos = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Missão, Visão e
-              <span className="block text-primary">Valores</span>
+              Carregamos gerações que 
+              <span className="text-primary block mt-2"> revelam Ideais</span>
             </h2>
           </div>
 
@@ -185,7 +185,7 @@ const SobreNos = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  A nossa maior missão é acelerarmos a inovação das empresas em cada etapa da sua cadeia de valor, 
+                  A nossa maior missão é acelerarmos a inovação das empresas em cada etapa da sua cadeia de valor,
                   que vai desde a transformação do negócio, excelência na operação ao suporte tecnológico.
                 </p>
               </CardContent>
@@ -203,8 +203,8 @@ const SobreNos = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Aproveitando o nosso profundo conhecimento no sector e ampla experiência no ramo tecnológico, 
-                  a Multipla está comprometida em fazer negócios com integridade e trabalhar em prol de uma sociedade 
+                  Aproveitando o nosso profundo conhecimento no sector e ampla experiência no ramo tecnológico,
+                  a Multipla está comprometida em fazer negócios com integridade e trabalhar em prol de uma sociedade
                   mais sustentável e segura.
                 </p>
               </CardContent>
@@ -214,7 +214,7 @@ const SobreNos = () => {
             <div>
               <h3 className="text-2xl font-bold text-center text-foreground mb-8">Nossos Valores</h3>
               <p className="text-lg text-muted-foreground text-center mb-8 max-w-3xl mx-auto">
-                Os nossos valores moldam a cultura da nossa empresa e definem o nosso carácter. Vivemos os valores 
+                Os nossos valores moldam a cultura da nossa empresa e definem o nosso carácter. Vivemos os valores
                 fundamentais através de comportamentos individuais, servindo como base para agirmos e tomarmos decisões.
               </p>
               <div className="grid md:grid-cols-3 gap-8">
@@ -240,18 +240,18 @@ const SobreNos = () => {
       {/* Timeline */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div className="text-start space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Nossa
-              <span className="block text-primary">Jornada</span>
+              <span className=" text-primary"> Jornada</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl">
               Marcos importantes da nossa história de crescimento e inovação.
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
+          <div className="max-w-4xl">
+            <div className="space-y-5">
               {milestones.map((milestone, index) => (
                 <div key={index} className="flex items-start space-x-6">
                   <div className="flex-shrink-0">

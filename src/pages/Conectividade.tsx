@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  Network, 
-  Wifi, 
+import {
+  Network,
+  Wifi,
   Globe,
   Phone,
   Router,
@@ -52,7 +52,7 @@ const Conectividade = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
@@ -82,7 +82,7 @@ const Conectividade = () => {
                 <span className="block text-primary">Alta Performance</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Graças à parceria com a Ipworld, a Multipla garante alta velocidade devido aos PoP, 
+                Graças à parceria com a Ipworld, a Multipla garante alta velocidade devido aos PoP,
                 com uma rede robusta que permite rotear o tráfego, garantindo serviços de conectividade altamente satisfatórios.
               </p>
             </div>
@@ -97,7 +97,7 @@ const Conectividade = () => {
                     Prontos para o Digital
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Quando o assunto é conectividade e interconexões, estamos preparados para atender às necessidades prontas 
+                    Quando o assunto é conectividade e interconexões, estamos preparados para atender às necessidades prontas
                     para uso digital dos requisitos de negócio, mesmo que os mesmos estejam em constante mudança.
                   </p>
                   <h4 className="font-semibold text-foreground mb-3">Com o ecossistema de conectividade fornecemos:</h4>

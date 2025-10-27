@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
-import { 
+import {
   MapPin,
   Phone,
   Mail,
@@ -61,7 +61,7 @@ const Contactos = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
@@ -165,11 +165,11 @@ const Contactos = () => {
                   <label htmlFor="message" className="text-sm font-medium text-foreground">
                     Mensagem *
                   </label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Descreva as suas necessidades ou questões..." 
+                  <Textarea
+                    id="message"
+                    placeholder="Descreva as suas necessidades ou questões..."
                     rows={5}
-                    required 
+                    required
                   />
                 </div>
 
@@ -215,7 +215,7 @@ const Contactos = () => {
                     Fomos o primeiro Datacenter do país preparado para o outsourcing.
                   </p>
                   <p className="text-muted-foreground">
-                    Somos um Datacenter Carrier Neutral e estamos ligados aos principais ISP nacionais 
+                    Somos um Datacenter Carrier Neutral e estamos ligados aos principais ISP nacionais
                     e a 2 Internet Exchange Point internacionais.
                   </p>
                   <Button variant="outline" className="w-full">
@@ -275,7 +275,7 @@ const Contactos = () => {
                   <Phone className="w-4 h-4 mr-2" />
                   Ligar Agora
                 </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 rounded-lg">
+                <Button variant="secondary" className="text-primary hover:bg-primary hover:text-white font-semibold px-8 py-4 rounded-lg">
                   <Mail className="w-4 h-4 mr-2" />
                   Enviar Email
                 </Button>

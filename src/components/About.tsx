@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { 
-  CheckCircle2, 
-  Users, 
-  Lightbulb, 
-  Shield, 
+import {
+  CheckCircle2,
+  Users,
+  Lightbulb,
+  Shield,
   ArrowRight,
   Target,
   Award,
@@ -52,7 +52,7 @@ const About = () => {
             Quem Somos
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mais de 15 anos transformando desafios corporativos em oportunidades através da tecnologia. 
+            Mais de 15 anos transformando desafios corporativos em oportunidades através da tecnologia.
             Somos sua parceira estratégica para o futuro digital.
           </p>
         </div>
@@ -66,12 +66,12 @@ const About = () => {
                 <span className="block text-primary">Excelência e Inovação</span>
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Fundada em 2009, a CorpTech nasceu com o propósito de democratizar o acesso às 
-                melhores tecnologias corporativas. Hoje, somos reconhecidos como uma das principais 
+                Fundada em 2009, a Multipla nasceu com o propósito de democratizar o acesso às
+                melhores tecnologias corporativas. Hoje, somos reconhecidos como uma das principais
                 empresas de soluções tecnológicas do país.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Nossa missão é simples: transformar complexidade tecnológica em soluções simples 
+                Nossa missão é simples: transformar complexidade tecnológica em soluções simples
                 e eficientes que impulsionem o crescimento dos nossos clientes.
               </p>
             </div>
@@ -106,7 +106,7 @@ const About = () => {
               className="rounded-2xl shadow-card-hover w-full h-auto"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
-            
+
             {/* Floating Stats */}
             <div className="absolute -bottom-8 -left-8 bg-white rounded-xl p-6 shadow-corporate">
               <div className="text-center space-y-1">

@@ -36,7 +36,7 @@ const NotFound = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
+          <Button
             onClick={() => window.history.back()}
             className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all group"
           >
@@ -54,8 +54,8 @@ const NotFound = () => {
         {/* Help Text */}
         <p className="text-gray-300 text-sm">
           Se você acredita que isso é um erro, entre em contato conosco em{" "}
-          <a href="mailto:contato@corptech.com.br" className="text-primary-glow hover:underline">
-            contato@corptech.com.br
+          <a href="mailto:sales@multipla.co.ao" className="text-primary-glow hover:underline">
+            sales@multipla.co.ao
           </a>
         </p>
       </div>

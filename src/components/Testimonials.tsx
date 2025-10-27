@@ -4,9 +4,9 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Maria Silva",
-    position: "CEO, TechCorp Brasil",
+    position: "CEO, TechCorp",
     company: "TechCorp",
-    content: "A CorpTech transformou completamente nossa infraestrutura de TI. O resultado foi um aumento de 40% na produtividade e redução significativa nos custos operacionais.",
+    content: "A Multipla transformou completamente nossa infraestrutura de TI. O resultado foi um aumento de 40% na produtividade e redução significativa nos custos operacionais.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
   },
@@ -14,7 +14,7 @@ const testimonials = [
     name: "João Santos",
     position: "CTO, Inovação Digital",
     company: "Inovação Digital",
-    content: "Excelente suporte técnico e soluções inovadoras. A migração para a nuvem foi executada sem nenhum downtime. Recomendo fortemente os serviços da CorpTech.",
+    content: "Excelente suporte técnico e soluções inovadoras. A migração para a nuvem foi executada sem nenhum downtime. Recomendo fortemente os serviços da Multipla.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
   },
@@ -22,7 +22,7 @@ const testimonials = [
     name: "Ana Costa",
     position: "Diretora de TI, GlobalTech",
     company: "GlobalTech",
-    content: "Parceria estratégica que vai além da prestação de serviços. A CorpTech se tornou uma extensão da nossa equipe, sempre propondo soluções inovadoras e eficientes.",
+    content: "Parceria estratégica que vai além da prestação de serviços. A Multipla se tornou uma extensão da nossa equipe, sempre propondo soluções inovadoras e eficientes.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
   }
@@ -39,7 +39,7 @@ const Testimonials = () => {
             <span className="block text-primary">Clientes</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Mais de 500 empresas já transformaram seus negócios conosco. 
+            Mais de 500 empresas já transformaram seus negócios conosco.
             Veja os depoimentos de quem confia na nossa expertise.
           </p>
         </div>
@@ -86,27 +86,6 @@ const Testimonials = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Trust Indicators */}
-        <div className="mt-16">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-semibold text-foreground mb-2">
-              Empresas que Confiam em Nós
-            </h3>
-            <p className="text-muted-foreground">
-              Parceiros estratégicos em diversos setores da economia
-            </p>
-          </div>
-
-          {/* Company Logos Placeholder */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
-            {[1, 2, 3, 4].map((_, index) => (
-              <div key={index} className="bg-muted rounded-lg h-16 flex items-center justify-center">
-                <span className="text-muted-foreground font-semibold">Logo {index + 1}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

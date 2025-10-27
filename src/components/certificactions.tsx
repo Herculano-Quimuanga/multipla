@@ -1,0 +1,39 @@
+const logos = [
+    { src: '/public/vmWare.png' },
+    { src: '/public/cisco.png' },
+    { src: '/public/ms.png' },
+    { src: '/public/netApp.png' },
+    { src: '/public/microTik.png' },
+];
+
+const Certificactions = () => {
+    return (
+        <section className="py-20 bg-slate-900">
+            {/* Trust Indicators */}
+            <div className="container mx-auto">
+                <div className="text-center mb-8">
+                    <h3 className="text-4xl font-semibold text-white mb-3">
+                        Certificações que impactam
+                    </h3>
+                    <p className="text-muted-foreground text-xl">
+                        Somos reconhecidos por instituições de grande renome tecnológico
+                    </p>
+                </div>
+
+                {/* Company Logos Placeholder */}
+                <div className="w-50 grid grid-cols-2 md:grid-cols-3 sm:grid-cols-1 gap-2 items-center justify-center mx-auto">
+                    {logos.map((logo, index) => (
+                        <img
+                            key={index}
+                            src={logo.src}
+                            alt={`Logo ${index + 1}`}
+                            className="img_certi transition-transform duration-300 hover:scale-105 opacity-75 hover:opacity-100"
+                        />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Certificactions

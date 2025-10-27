@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  Users, 
-  Lightbulb, 
+import {
+  Users,
+  Lightbulb,
   Settings,
   Handshake,
   Building,
@@ -69,7 +69,7 @@ const SolucoesComplementares = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
@@ -99,8 +99,8 @@ const SolucoesComplementares = () => {
                 <span className="block text-primary">Impulsionam o Crescimento</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                As nossas soluções complementares são serviços integrados que impulsionam os negócios para o crescimento. 
-                Com a missão de atender às necessidades específicas dos clientes de diferentes sectores, a Multipla analisa 
+                As nossas soluções complementares são serviços integrados que impulsionam os negócios para o crescimento.
+                Com a missão de atender às necessidades específicas dos clientes de diferentes sectores, a Multipla analisa
                 os projectos, desenha e implementa todos os recursos tecnológicos necessários para uma operação de excelência.
               </p>
             </div>
@@ -115,7 +115,7 @@ const SolucoesComplementares = () => {
                     Foco no Core Business
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Tudo para que as empresas estejam focadas no seu core business, enquanto cuidamos de toda a infraestrutura 
+                    Tudo para que as empresas estejam focadas no seu core business, enquanto cuidamos de toda a infraestrutura
                     e soluções tecnológicas necessárias para o sucesso do seu negócio.
                   </p>
                 </div>
@@ -214,11 +214,11 @@ const SolucoesComplementares = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center space-y-6 mb-12">
               <h2 className="text-4xl font-bold text-foreground">
-                Logística e 
+                Logística e
                 <span className="text-primary">Armazenamento</span>
               </h2>
               <p className="text-xl text-muted-foreground">
-                Com vasta experiência no mercado, somos responsáveis também pela logística e armazenamento 
+                Com vasta experiência no mercado, somos responsáveis também pela logística e armazenamento
                 de equipamentos tecnológicos de várias empresas.
               </p>
             </div>

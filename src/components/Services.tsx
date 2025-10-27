@@ -1,11 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { 
-  Cloud, 
-  Shield, 
-  Database, 
-  Settings, 
-  Smartphone, 
+import {
+  Cloud,
+  Shield,
+  Database,
+  Settings,
+  Smartphone,
   BarChart3,
   ArrowRight,
   Zap
@@ -61,7 +61,7 @@ const Services = () => {
             <span className="block text-primary">Completas</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferecemos um portfólio abrangente de serviços tecnológicos para atender todas as necessidades da sua empresa, 
+            Oferecemos um portfólio abrangente de serviços tecnológicos para atender todas as necessidades da sua empresa,
             desde infraestrutura até desenvolvimento de aplicações customizadas.
           </p>
         </div>

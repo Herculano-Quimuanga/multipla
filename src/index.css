@@ -125,6 +125,7 @@ All colors MUST be HSL.
 }
 
 @layer components {
+
   /* Corporate Button Styles */
   .btn-corporate {
     @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground font-semibold px-8 py-4 rounded-lg shadow-corporate hover:shadow-glow transition-all duration-300 hover:scale-105;
@@ -165,6 +166,7 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+
   /* Corporate Animations */
   .animate-fade-up {
     animation: fadeUp 0.6s ease-out;
@@ -179,6 +181,7 @@ All colors MUST be HSL.
       opacity: 0;
       transform: translateY(30px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -190,9 +193,34 @@ All colors MUST be HSL.
       opacity: 0;
       transform: scale(0.9);
     }
+
     to {
       opacity: 1;
       transform: scale(1);
     }
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.img_certi{
+  width: 150px;
+}
+
+.text-dark{
+  color: #040424;
 }

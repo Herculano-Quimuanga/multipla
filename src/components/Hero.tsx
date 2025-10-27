@@ -4,13 +4,13 @@ import heroImage from "@/assets/hero-corporate-team.jpg";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="pt-20 pb-16 bg-gradient-hero min-h-screen flex items-center">
+    <section id="inicio" className="py-20 bg-gradient-hero min-h-screen flex items-center">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 animate-fade-up">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mt-10">
                 Transformamos Seus
                 <span className="block bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-transparent">
                   Desafios Corporativos
@@ -18,8 +18,7 @@ const Hero = () => {
                 em Soluções Inovadoras
               </h1>
               <p className="text-xl text-gray-200 max-w-2xl">
-                Oferecemos soluções tecnológicas completas para impulsionar sua empresa ao próximo nível. 
-                Expertise comprovada, resultados excepcionais.
+                Oferecemos soluções tecnológicas completas para impulsionar sua empresa ao próximo nível.
               </p>
             </div>
 
@@ -51,7 +50,7 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/20">
+            {/* <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/20">
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">500+</div>
                 <div className="text-sm text-gray-300">Projetos Concluídos</div>
@@ -64,7 +63,7 @@ const Hero = () => {
                 <div className="text-3xl font-bold text-white">15</div>
                 <div className="text-sm text-gray-300">Anos de Experiência</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Hero Image */}

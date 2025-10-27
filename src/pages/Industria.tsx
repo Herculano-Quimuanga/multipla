@@ -2,12 +2,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  Building2, 
-  Stethoscope, 
-  Landmark, 
-  Factory, 
-  Truck, 
+import {
+  Building2,
+  Stethoscope,
+  Landmark,
+  Factory,
+  Truck,
   ShoppingBag,
   ArrowRight,
   Target
@@ -56,7 +56,7 @@ const Industria = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
@@ -66,7 +66,7 @@ const Industria = () => {
               <span className="block text-primary-glow">Indústrias</span>
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Somos o parceiro certo para a consolidação do seu negócio para o futuro. 
+              Somos o parceiro certo para a consolidação do seu negócio para o futuro.
               A Multipla nos diversos sectores do mercado.
             </p>
             <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
@@ -83,12 +83,12 @@ const Industria = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center space-y-6">
               <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-                A Multipla nos diversos 
+                A Multipla nos diversos
                 <span className="block text-primary">sectores do mercado</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Somos reconhecidos pelo profundo conhecimento tecnológico aplicado a diferentes sectores e indústrias no mercado. 
-                Concluímos com sucesso a implementação de projectos com o mais alto padrão de exigência (nacional e internacional), 
+                Somos reconhecidos pelo profundo conhecimento tecnológico aplicado a diferentes sectores e indústrias no mercado.
+                Concluímos com sucesso a implementação de projectos com o mais alto padrão de exigência (nacional e internacional),
                 ajudando assim as empresas a prepararem-se para o futuro.
               </p>
             </div>
@@ -103,7 +103,7 @@ const Industria = () => {
                     Nosso Compromisso
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    A Multipla trabalha para que a sua empresa não pare e para que se foque no seu core business, 
+                    A Multipla trabalha para que a sua empresa não pare e para que se foque no seu core business,
                     com uma equipa especializada para atender a demanda de trabalho exigida no ramo tecnológico.
                   </p>
                 </div>
@@ -116,12 +116,12 @@ const Industria = () => {
       {/* Industries Grid */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div className="text-start space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Sectores de 
-              <span className="block text-primary">Atuação</span>
+              <span className="text-primary"> Atuação</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl">
               Experiência comprovada em múltiplos sectores com soluções tecnológicas adaptadas às necessidades específicas de cada indústria.
             </p>
           </div>
@@ -159,7 +159,7 @@ const Industria = () => {
       {/* CTA Section */}
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center bg-gradient-primary rounded-2xl p-12 text-white">
+          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white">
             <div className="max-w-2xl mx-auto space-y-6">
               <h3 className="text-3xl font-bold">
                 Pronto para Transformar o Seu Sector?
@@ -167,7 +167,7 @@ const Industria = () => {
               <p className="text-xl opacity-90">
                 Descubra como as nossas soluções tecnológicas podem revolucionar a sua indústria
               </p>
-              <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+              <Button className="bg-white text-dark hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
                 Solicitar Consultoria
               </Button>
             </div>
