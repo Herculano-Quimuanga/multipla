@@ -1,9 +1,15 @@
+import vmWare from "@/assets/vmWare.png";
+import cisco from "@/assets/cisco.png";
+import microsoft from "@/assets/ms.png";
+import netApp from "@/assets/netApp.png";
+import microTik from "@/assets/microTik.png"
+
 const logos = [
-    { src: '/public/vmWare.png' },
-    { src: '/public/cisco.png' },
-    { src: '/public/ms.png' },
-    { src: '/public/netApp.png' },
-    { src: '/public/microTik.png' },
+    { src: vmWare },
+    { src: cisco },
+    { src: microsoft },
+    { src: netApp },
+    { src: microTik },
 ];
 
 const Certificactions = () => {
