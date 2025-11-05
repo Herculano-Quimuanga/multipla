@@ -62,7 +62,7 @@ const Industria = () => {
         className="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-cover bg-center text-white"
         style={{
           backgroundImage:
-            "url('/public/images/industria.jpg')",
+            "url('/images/industria.jpg')",
         }}
       >
         {/* Overlay escuro */}

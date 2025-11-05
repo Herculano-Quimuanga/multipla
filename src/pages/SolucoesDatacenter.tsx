@@ -60,7 +60,7 @@ const SolucoesDatacenter = () => {
         className="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-cover bg-center text-white"
         style={{
           backgroundImage:
-            "url('/public/images/datacenter.jpg')",
+            "url('/images/datacenter.jpg')",
         }}
       >
         {/* Overlay escuro */}

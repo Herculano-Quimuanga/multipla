@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Phone, Mail, MessageSquare } from "lucide-react";
-import consultationImage from "/public/images/business-consultation.jpg";
+import consultationImage from "/images/business-consultation.jpg";
 
 const CTA = () => {
   return (
