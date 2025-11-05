@@ -58,8 +58,18 @@ const Industria = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-hero">
-        <div className="container mx-auto px-4">
+      <section
+        className="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-cover bg-center text-white"
+        style={{
+          backgroundImage:
+            "url('/src/assets/industria.jpg')",
+        }}
+      >
+        {/* Overlay escuro */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Conteúdo */}
+        <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-5xl md:text-6xl font-bold text-white">
               Um Olhar para as
@@ -76,6 +86,7 @@ const Industria = () => {
           </div>
         </div>
       </section>
+
 
       {/* About Section */}
       <section className="py-20 section-gradient">
@@ -118,7 +129,7 @@ const Industria = () => {
         <div className="container mx-auto px-4">
           <div className="text-start space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Sectores de 
+              Sectores de
               <span className="text-primary"> Atuação</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl">

@@ -69,8 +69,18 @@ const SobreNos = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-hero">
-        <div className="container mx-auto px-4">
+      <section
+        className="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-cover bg-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80')",
+        }}
+      >
+        {/* Overlay escuro */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Conteúdo */}
+        <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-5xl md:text-6xl font-bold text-white">
               Somos o Parceiro de
@@ -86,6 +96,7 @@ const SobreNos = () => {
           </div>
         </div>
       </section>
+
 
       {/* About Section */}
       <section className="py-20 section-gradient">
@@ -167,7 +178,7 @@ const SobreNos = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Carregamos gerações que 
+              Carregamos gerações que
               <span className="text-primary block mt-2"> revelam Ideais</span>
             </h2>
           </div>

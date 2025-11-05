@@ -98,7 +98,7 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-gradient-primary rounded-2xl p-12 text-white">
+        <div className="text-center bg-slate-900 rounded-2xl p-12 text-white">
           <div className="max-w-2xl mx-auto space-y-6">
             <h3 className="text-3xl font-bold">
               Pronto para Transformar Seu Negócio?
@@ -106,7 +106,7 @@ const Services = () => {
             <p className="text-xl opacity-90">
               Entre em contato conosco e descubra como nossas soluções podem impulsionar sua empresa
             </p>
-            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+            <Button className="bg-white text-dark hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
               Solicitar Consultoria Gratuita
             </Button>
           </div>

@@ -63,19 +63,30 @@ const Contactos = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-hero">
-        <div className="container mx-auto px-4">
+      <section
+        className="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-cover bg-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80')",
+        }}
+      >
+        {/* Overlay escuro */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Conteúdo */}
+        <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-5xl md:text-6xl font-bold text-white">
               Entre em contacto
               <span className="block text-primary-glow">ou faça-nos uma visita</span>
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Providenciamos serviços à medida das suas necessidades. Visite-nos ou entre em fale connosco.
+              Providenciamos serviços à medida das suas necessidades. Visite-nos ou fale connosco.
             </p>
           </div>
         </div>
       </section>
+
 
       {/* Contact Information */}
       <section className="py-20 section-gradient">

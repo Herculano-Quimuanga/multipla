@@ -71,8 +71,18 @@ const SolucoesComplementares = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-hero">
-        <div className="container mx-auto px-4">
+      <section
+        className="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-cover bg-center text-white"
+        style={{
+          backgroundImage:
+            "url('/src/assets/complementar.jpg')",
+        }}
+      >
+        {/* Overlay escuro */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Conteúdo */}
+        <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-5xl md:text-6xl font-bold text-white">
               Entregamos soluções
@@ -88,6 +98,7 @@ const SolucoesComplementares = () => {
           </div>
         </div>
       </section>
+
 
       {/* About Section */}
       <section className="py-20 section-gradient">
