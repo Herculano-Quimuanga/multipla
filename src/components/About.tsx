@@ -10,7 +10,7 @@ import {
   Award,
   Zap
 } from "lucide-react";
-import techSolutionsImage from "@/assets/tech-solutions.jpg";
+import techSolutionsImage from "/images/tech-solutions.jpg";
 
 const About = () => {
   const values = [

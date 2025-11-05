@@ -1,8 +1,8 @@
-import vmWare from "@/assets/vmWare.png";
-import cisco from "@/assets/cisco.png";
-import microsoft from "@/assets/ms.png";
-import netApp from "@/assets/netApp.png";
-import microTik from "@/assets/microTik.png"
+import vmWare from "/public/images/vmWare.png";
+import cisco from "/public/images/cisco.png";
+import microsoft from "/public/images/ms.png";
+import netApp from "/public/images/netApp.png";
+import microTik from "/public/images/microTik.png"
 
 const logos = [
     { src: vmWare },
