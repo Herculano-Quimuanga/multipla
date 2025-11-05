@@ -22,10 +22,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">M</span>
-              </div>
+            <div className="flex items-center space-x-1">
+              <img src="/favicon.png" alt="Multipla Logo" className="w-9 h-9" />
               <span className="text-xl font-bold">Multipla</span>
             </div>
             <p className="text-gray-300 leading-relaxed">

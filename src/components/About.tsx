@@ -131,7 +131,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
               <Card key={index} className="card-corporate text-center group">
-                <CardContent className="p-8 space-y-4">
+                <CardContent className="p-2 space-y-4">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
                     <value.icon className="w-8 h-8 text-white" />
                   </div>
