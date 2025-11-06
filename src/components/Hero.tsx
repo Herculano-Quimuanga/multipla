@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import imgHero from '/images/hero.jpg'
 
 const Hero = () => {
   return (
     <section
       id="inicio"
       className="relative py-20 min-h-screen flex items-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/src/assets/hero.jpg')" }}
+      style={{ backgroundImage: "url('/images/hero.jpg')" }}
     >
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black/60"></div>
