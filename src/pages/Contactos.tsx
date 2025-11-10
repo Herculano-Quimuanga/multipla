@@ -64,6 +64,7 @@ const Contactos = () => {
 
       {/* Hero Section */}
       <section
+        data-aos="fade-in"
         className="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-cover bg-center text-white"
         style={{
           backgroundImage:
@@ -76,11 +77,11 @@ const Contactos = () => {
         {/* Conteúdo */}
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-white">
+            <h1 className="text-5xl md:text-6xl font-bold text-white" data-aos="fade-down" >
               Entre em contacto
               <span className="block text-primary-glow">ou faça-nos uma visita</span>
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up">
               Providenciamos serviços à medida das suas necessidades. Visite-nos ou fale connosco.
             </p>
           </div>
@@ -91,29 +92,31 @@ const Contactos = () => {
       {/* Contact Information */}
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <div className="text-start space-y-4 mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground" data-aos="fade-right">
               Como nos
-              <span className="block text-primary">Encontrar</span>
+              <span className="text-primary"> encontrar</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl" data-aos="fade-right" data-aos-delay="300">
               Estamos sempre prontos para ajudar. Entre em contacto connosco através de qualquer um dos canais abaixo.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {contactInfo.map((info, index) => (
-              <Card key={index} className="card-corporate text-center">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <info.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle className="text-xl font-bold">{info.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{info.content}</p>
-                </CardContent>
-              </Card>
+              <div key={index}>
+                <Card className="card-corporate text-center" data-aos="fade-up" data-aos-delay={index * 125}>
+                  <CardHeader>
+                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <info.icon className="w-8 h-8 text-white" />
+                    </div>
+                    <CardTitle className="text-xl font-bold">{info.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{info.content}</p>
+                  </CardContent>
+                </Card>
+              </div>
             ))}
           </div>
         </div>
@@ -124,116 +127,122 @@ const Contactos = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card className="card-corporate">
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold flex items-center">
-                  <Send className="w-6 h-6 mr-3 text-primary" />
-                  Escreva-nos
-                </CardTitle>
-                <p className="text-muted-foreground">
-                  Preencha o formulário abaixo e entraremos em contacto consigo o mais breve possível.
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-foreground">
-                      Nome Completo *
-                    </label>
-                    <Input id="name" placeholder="Seu nome completo" required />
+            <div>
+              <Card className="card-corporate" data-aos="zoom-in">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold flex items-center">
+                    <Send className="w-6 h-6 mr-3 text-primary" />
+                    Escreva-nos
+                  </CardTitle>
+                  <p className="text-muted-foreground">
+                    Preencha o formulário abaixo e entraremos em contacto consigo o mais breve possível.
+                  </p>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="text-sm font-medium text-foreground">
+                        Nome Completo *
+                      </label>
+                      <Input id="name" placeholder="Seu nome completo" required />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="email" className="text-sm font-medium text-foreground">
+                        Email *
+                      </label>
+                      <Input id="email" type="email" placeholder="seu@email.com" required />
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-foreground">
-                      Email *
-                    </label>
-                    <Input id="email" type="email" placeholder="seu@email.com" required />
+
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <label htmlFor="phone" className="text-sm font-medium text-foreground">
+                        Telefone
+                      </label>
+                      <Input id="phone" type="tel" placeholder="+244 XXX XXX XXX" />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="company" className="text-sm font-medium text-foreground">
+                        Empresa
+                      </label>
+                      <Input id="company" placeholder="Nome da empresa" />
+                    </div>
                   </div>
-                </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium text-foreground">
-                      Telefone
+                    <label htmlFor="subject" className="text-sm font-medium text-foreground">
+                      Assunto *
                     </label>
-                    <Input id="phone" type="tel" placeholder="+244 XXX XXX XXX" />
+                    <Input id="subject" placeholder="Como podemos ajudar?" required />
                   </div>
+
                   <div className="space-y-2">
-                    <label htmlFor="company" className="text-sm font-medium text-foreground">
-                      Empresa
+                    <label htmlFor="message" className="text-sm font-medium text-foreground">
+                      Mensagem *
                     </label>
-                    <Input id="company" placeholder="Nome da empresa" />
+                    <Textarea
+                      id="message"
+                      placeholder="Descreva as suas necessidades ou questões..."
+                      rows={5}
+                      required
+                    />
                   </div>
-                </div>
 
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium text-foreground">
-                    Assunto *
-                  </label>
-                  <Input id="subject" placeholder="Como podemos ajudar?" required />
-                </div>
+                  <div className="flex items-start space-x-2">
+                    <Checkbox id="privacy" required />
+                    <label htmlFor="privacy" className="text-sm text-muted-foreground">
+                      Eu concordo com as políticas de privacidade *
+                    </label>
+                  </div>
 
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-foreground">
-                    Mensagem *
-                  </label>
-                  <Textarea
-                    id="message"
-                    placeholder="Descreva as suas necessidades ou questões..."
-                    rows={5}
-                    required
-                  />
-                </div>
-
-                <div className="flex items-start space-x-2">
-                  <Checkbox id="privacy" required />
-                  <label htmlFor="privacy" className="text-sm text-muted-foreground">
-                    Eu concordo com as políticas de privacidade *
-                  </label>
-                </div>
-
-                <Button className="w-full bg-gradient-primary text-white hover:opacity-90 font-semibold py-3">
-                  Enviar Mensagem
-                  <Send className="w-4 h-4 ml-2" />
-                </Button>
-              </CardContent>
-            </Card>
+                  <Button className="w-full bg-gradient-primary text-white hover:opacity-90 font-semibold py-3">
+                    Enviar Mensagem
+                    <Send className="w-4 h-4 ml-2" />
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
 
             {/* Map & Additional Info */}
             <div className="space-y-8">
               {/* Map Placeholder */}
-              <Card className="card-corporate">
-                <CardContent className="p-0">
-                  <div className="h-64 bg-gradient-section rounded-lg flex items-center justify-center">
-                    <div className="text-center space-y-2">
-                      <MapPin className="w-12 h-12 text-primary mx-auto" />
-                      <p className="text-foreground font-semibold">Localização</p>
-                      <p className="text-sm text-muted-foreground">Avenida Lenine, Torres Oceano A, 19º D</p>
-                      <p className="text-sm text-muted-foreground">Luanda, Angola</p>
+              <div data-aos="fade-left">
+                <Card className="card-corporate">
+                  <CardContent className="p-0">
+                    <div className="h-64 bg-gradient-section rounded-lg flex items-center justify-center">
+                      <div className="text-center space-y-2">
+                        <MapPin className="w-12 h-12 text-primary mx-auto" />
+                        <p className="text-foreground font-semibold">Localização</p>
+                        <p className="text-sm text-muted-foreground">Avenida Lenine, Torres Oceano A, 19º D</p>
+                        <p className="text-sm text-muted-foreground">Luanda, Angola</p>
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </div>
 
               {/* Datacenter Info */}
-              <Card className="card-corporate">
-                <CardHeader>
-                  <CardTitle className="text-xl font-bold text-primary">
-                    10 Anos Datacenter
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Fomos o primeiro Datacenter do país preparado para o outsourcing.
-                  </p>
-                  <p className="text-muted-foreground">
-                    Somos um Datacenter Carrier Neutral e estamos ligados aos principais ISP nacionais
-                    e a 2 Internet Exchange Point internacionais.
-                  </p>
-                  <Button variant="outline" className="w-full">
-                    Conhecer o Datacenter
-                  </Button>
-                </CardContent>
-              </Card>
+              <div data-aos="fade-left" data-aos-delay="300">
+                <Card className="card-corporate">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-bold text-primary">
+                      10 Anos Datacenter
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <p className="text-muted-foreground">
+                      Fomos o primeiro Datacenter do país preparado para o outsourcing.
+                    </p>
+                    <p className="text-muted-foreground">
+                      Somos um Datacenter Carrier Neutral e estamos ligados aos principais ISP nacionais
+                      e a 2 Internet Exchange Point internacionais.
+                    </p>
+                    <Button variant="outline" className="w-full">
+                      Conhecer o Datacenter
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
@@ -243,28 +252,30 @@ const Contactos = () => {
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground" data-aos="fade-up">
               Como Podemos
-              <span className="block text-primary">Ajudar</span>
+              <span className="text-primary"> ajudar</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="300">
               Saiba mais sobre todos os serviços de Datacenter da Multipla e descubra como podemos transformar o seu negócio.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {serviceAreas.map((service, index) => (
-              <Card key={index} className="card-corporate text-center group hover:border-primary/30">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <service.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
-              </Card>
+              <div key={index} data-aos="fade-in" data-aos-delay={index * 125}>
+                <Card className="card-corporate text-center group hover:border-primary/30">
+                  <CardHeader>
+                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                      <service.icon className="w-8 h-8 text-white" />
+                    </div>
+                    <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{service.description}</p>
+                  </CardContent>
+                </Card>
+              </div>
             ))}
           </div>
         </div>
@@ -273,7 +284,7 @@ const Contactos = () => {
       {/* CTA Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center bg-gradient-primary rounded-2xl p-12 text-white">
+          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white" data-aos="zoom-out">
             <div className="max-w-2xl mx-auto space-y-6">
               <h3 className="text-3xl font-bold">
                 Pronto para Começar?

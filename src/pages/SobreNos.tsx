@@ -8,7 +8,6 @@ import {
   Eye,
   Heart,
   Award,
-  TrendingUp,
   ArrowRight,
   Calendar,
   MapPin,
@@ -82,14 +81,14 @@ const SobreNos = () => {
         {/* Conteúdo */}
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-white">
+            <h1 className="text-5xl md:text-6xl font-bold text-white" data-aos="zoom-in">
               Somos o Parceiro de
               <span className="block text-primary-glow mt-1">Inovação das Empresas</span>
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed" data-aos="zoom-in" data-aos-delay="300">
               Bem-vindo ao Universo Multipla. Há mais de 25 anos a olhar para o futuro.
             </p>
-            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all" data-aos="zoom-in" data-aos-delay="500">
               Conheça Nossa História
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
@@ -151,7 +150,7 @@ const SobreNos = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground" data-aos="fade-down">
               Números que
               <span className="block text-primary mt-2">Inspiram Confiança</span>
             </h2>
@@ -159,7 +158,7 @@ const SobreNos = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <Card key={index} className="card-corporate text-center">
+              <Card key={index} className="card-corporate text-center" data-aos="zoom-in">
                 <CardContent className="pt-8">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <stat.icon className="w-8 h-8 text-white" />
@@ -177,7 +176,7 @@ const SobreNos = () => {
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground" data-aos="fade-up">
               Carregamos gerações que
               <span className="text-primary block mt-2"> revelam Ideais</span>
             </h2>
@@ -185,7 +184,7 @@ const SobreNos = () => {
 
           <div className="max-w-4xl mx-auto space-y-12">
             {/* Mission */}
-            <Card className="card-corporate">
+            <Card className="card-corporate" data-aos="fade-left">
               <CardHeader>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
@@ -203,7 +202,7 @@ const SobreNos = () => {
             </Card>
 
             {/* Vision */}
-            <Card className="card-corporate">
+            <Card className="card-corporate" data-aos="fade-left" data-aos-delay="300">
               <CardHeader>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
@@ -265,12 +264,12 @@ const SobreNos = () => {
             <div className="space-y-5">
               {milestones.map((milestone, index) => (
                 <div key={index} className="flex items-start space-x-6">
-                  <div className="flex-shrink-0">
+                  <div className="flex-shrink-0" data-aos="zoom-in" data-aos-delay={index * 120}>
                     <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold">
                       {milestone.year}
                     </div>
                   </div>
-                  <Card className="card-corporate flex-1">
+                  <Card className="card-corporate flex-1" data-aos="fade-left" data-aos-delay={index * 120}>
                     <CardHeader>
                       <CardTitle className="text-xl font-bold">{milestone.title}</CardTitle>
                     </CardHeader>
@@ -288,7 +287,7 @@ const SobreNos = () => {
       {/* CTA Section */}
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center bg-gradient-primary rounded-2xl p-12 text-white">
+          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white" data-aos="zoom-in">
             <div className="max-w-2xl mx-auto space-y-6">
               <h3 className="text-3xl font-bold">
                 Pronto para Ser Parte da Nossa História?
@@ -296,7 +295,7 @@ const SobreNos = () => {
               <p className="text-xl opacity-90">
                 Junte-se aos nossos clientes e descubra como podemos acelerar a inovação do seu negócio
               </p>
-              <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+              <Button className="bg-white text-dark hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
                 Falar Conosco
               </Button>
             </div>

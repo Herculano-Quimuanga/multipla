@@ -69,14 +69,14 @@ const SolucoesDatacenter = () => {
         {/* Conteúdo */}
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-white">
+            <h1 className="text-5xl md:text-6xl font-bold text-white" data-aos="fade-up">
               Soluções de
               <span className="block text-primary-glow">Datacenter</span>
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="300">
               Um passo para o futuro. O Primeiro Datacenter Privado Preparado para a Terceirização.
             </p>
-            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all" data-aos="fade-up" data-aos-delay="500">
               Visite as soluções AZCloud
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
@@ -101,7 +101,7 @@ const SolucoesDatacenter = () => {
               </p>
             </div>
 
-            <div className="bg-card rounded-2xl p-8 shadow-corporate">
+            <div className="bg-card rounded-2xl p-8 shadow-corporate" data-aos="fade-left">
               <h3 className="text-2xl font-bold text-foreground mb-6">
                 Infraestrutura Preparada
               </h3>
@@ -118,7 +118,7 @@ const SolucoesDatacenter = () => {
               </div>
             </div>
 
-            <div className="text-center bg-gradient-primary rounded-2xl p-8 text-white">
+            <div className="text-center bg-gradient-primary rounded-2xl p-8 text-white" data-aos="fade-right">
               <p className="text-lg">
                 A Multipla actualmente já montou datacenters com dimensão
                 <span className="font-bold"> Tier III </span>
@@ -144,7 +144,7 @@ const SolucoesDatacenter = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {datacenterServices.map((service, index) => (
-              <Card key={index} className="card-corporate group hover:border-primary/30">
+              <Card key={index} className="card-corporate group hover:border-primary/30" data-aos="zoom-in" data-aos-delay={index * 100}>
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <div className="w-16 h-16 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -186,7 +186,7 @@ const SolucoesDatacenter = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="card-corporate text-center">
+              <Card className="card-corporate text-center" data-aos="fade-up">
                 <CardContent className="pt-8">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <HardDrive className="w-8 h-8 text-white" />
@@ -196,7 +196,7 @@ const SolucoesDatacenter = () => {
                 </CardContent>
               </Card>
 
-              <Card className="card-corporate text-center">
+              <Card className="card-corporate text-center" data-aos="fade-up" data-aos-delay="350">
                 <CardContent className="pt-8">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <Zap className="w-8 h-8 text-white" />
@@ -206,7 +206,7 @@ const SolucoesDatacenter = () => {
                 </CardContent>
               </Card>
 
-              <Card className="card-corporate text-center">
+              <Card className="card-corporate text-center" data-aos="fade-up" data-aos-delay="700">
                 <CardContent className="pt-8">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <Shield className="w-8 h-8 text-white" />
@@ -223,7 +223,7 @@ const SolucoesDatacenter = () => {
       {/* CTA Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center bg-gradient-primary rounded-2xl p-12 text-white">
+          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white" data-aos="zoom-in">
             <div className="max-w-2xl mx-auto space-y-6">
               <h3 className="text-3xl font-bold">
                 Pronto para Migrar para o Datacenter?
@@ -231,7 +231,7 @@ const SolucoesDatacenter = () => {
               <p className="text-xl opacity-90">
                 Descubra como as nossas soluções de datacenter podem transformar a infraestrutura da sua empresa
               </p>
-              <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+              <Button className="bg-white text-dark hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
                 Solicitar Consultoria Gratuita
               </Button>
             </div>

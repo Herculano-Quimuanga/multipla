@@ -115,14 +115,14 @@ const Insights = () => {
         {/* Conteúdo */}
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-white">
+            <h1 className="text-5xl md:text-6xl font-bold text-white" data-aos="fade-down">
               Insights &
               <span className="block text-primary-glow">Conhecimento</span>
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed" data-aos="fade-down" data-aos-delay="300">
               Mantenha-se atualizado com as últimas tendências, análises e conhecimentos do mundo da tecnologia empresarial.
             </p>
-            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all" data-aos="fade-down" data-aos-delay="500">
               Explorar Artigos
               <BookOpen className="w-5 h-5 ml-2" />
             </Button>
@@ -135,18 +135,18 @@ const Insights = () => {
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
           <div className="text-srtar space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground" data-aos="fade-right">
               Artigos em
               <span className="text-primary"> Destaque</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl">
+            <p className="text-xl text-muted-foreground max-w-2xl" data-aos="fade-right">
               Os insights mais recentes e relevantes sobre tecnologia e transformação digital.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {featuredArticles.filter(article => article.featured).map((article) => (
-              <Card key={article.id} className="card-corporate group hover:border-primary/30 h-full">
+              <Card key={article.id} className="card-corporate group hover:border-primary/30 h-full" data-aos="zoom-in" data-aos-delay={article.id * 125}>
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
                     <Badge variant="secondary" className="bg-primary/10 text-primary">
@@ -193,11 +193,13 @@ const Insights = () => {
           <div className="text-center">
             <h3 className="text-3xl font-bold text-foreground mb-6">Categorias</h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {categories.map((category) => (
+              {categories.map((category, index) => (
                 <Button
                   key={category}
                   variant={category === "Todos" ? "default" : "outline"}
                   className="rounded-full"
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 125}
                 >
                   {category}
                 </Button>
@@ -218,7 +220,7 @@ const Insights = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allArticles.map((article) => (
-              <Card key={article.id} className="card-corporate group hover:border-primary/30 h-full">
+              <Card key={article.id} className="card-corporate group hover:border-primary/30 h-full" data-aos="zoom-in" data-aos-delay={article.id * 130}>
                 <CardHeader>
                   <div className="flex items-center justify-between mb-3">
                     <Badge variant="outline" className="text-xs">
@@ -266,7 +268,7 @@ const Insights = () => {
       {/* Newsletter CTA */}
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white">
+          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white" data-aos="zoom-in">
             <div className="max-w-2xl mx-auto space-y-6">
               <h3 className="text-3xl font-bold">
                 Mantenha-se Sempre Atualizado

@@ -71,15 +71,15 @@ const Industria = () => {
         {/* Conteúdo */}
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-white">
+            <h1 className="text-5xl md:text-6xl font-bold text-white" data-aos="zoom-in">
               Um Olhar para as
               <span className="block text-primary-glow">Indústrias</span>
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed" data-aos="zoom-in" data-aos-delay="300">
               Somos o parceiro certo para a consolidação do seu negócio para o futuro.
               A Multipla nos diversos sectores do mercado.
             </p>
-            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all" data-aos="zoom-in" data-aos-delay="500">
               Saiba Como
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
@@ -93,7 +93,7 @@ const Industria = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground" data-aos="zoom-in">
                 A Multipla nos diversos
                 <span className="block text-primary">sectores do mercado</span>
               </h2>
@@ -104,7 +104,7 @@ const Industria = () => {
               </p>
             </div>
 
-            <div className="bg-card rounded-2xl p-8 shadow-corporate">
+            <div className="bg-card rounded-2xl p-8 shadow-corporate" data-aos="fade-up">
               <div className="flex items-start space-x-4 mb-6">
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
                   <Target className="w-6 h-6 text-white" />
@@ -128,18 +128,18 @@ const Industria = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-start space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground" data-aos="fade-right">
               Sectores de
               <span className="text-primary"> Atuação</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl">
+            <p className="text-xl text-muted-foreground max-w-3xl" data-aos="fade-right" data-aos-delay="200">
               Experiência comprovada em múltiplos sectores com soluções tecnológicas adaptadas às necessidades específicas de cada indústria.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
-              <Card key={index} className="card-corporate group hover:border-primary/30">
+              <Card key={index} className="card-corporate group hover:border-primary/30" data-aos="zoom-in" data-aos-delay={index * 125}>
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -170,7 +170,7 @@ const Industria = () => {
       {/* CTA Section */}
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white">
+          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white" data-aos="zoom-in">
             <div className="max-w-2xl mx-auto space-y-6">
               <h3 className="text-3xl font-bold">
                 Pronto para Transformar o Seu Sector?

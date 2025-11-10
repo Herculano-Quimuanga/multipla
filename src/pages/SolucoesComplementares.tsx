@@ -139,19 +139,19 @@ const SolucoesComplementares = () => {
       {/* Main Services */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div className="text-start space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Serviços
-              <span className="block text-primary">Complementares</span>
+              <span className="text-primary"> Complementares</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-4xl">
               Oferecemos uma gama completa de serviços integrados para atender todas as suas necessidades tecnológicas.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {complementaryServices.map((service, index) => (
-              <Card key={index} className="card-corporate group hover:border-primary/30">
+              <Card key={index} className="card-corporate group hover:border-primary/30" data-aos="fade-up" data-aos-delay={index * 200}>
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <div className="w-16 h-16 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -196,7 +196,7 @@ const SolucoesComplementares = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {implementations.map((implementation, index) => (
-              <Card key={index} className="card-corporate group hover:border-primary/30">
+              <Card key={index} className="card-corporate group hover:border-primary/30" data-aos="zoom-out" data-aos-delay={index * 130}>
                 <CardHeader className="text-center">
                   <div className="w-16 h-16 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <implementation.icon className="w-8 h-8 text-white" />
@@ -236,7 +236,7 @@ const SolucoesComplementares = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {logisticSectors.map((sector, index) => (
-                <Card key={index} className="card-corporate text-center">
+                <Card key={index} className="card-corporate text-center" data-aos="zoom-in" data-aos-delay={index * 150}>
                   <CardContent className="pt-8">
                     <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <Building className="w-8 h-8 text-white" />
@@ -254,7 +254,7 @@ const SolucoesComplementares = () => {
       {/* CTA Section */}
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center bg-gradient-primary rounded-2xl p-12 text-white">
+          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white" data-aos="zoom-in">
             <div className="max-w-2xl mx-auto space-y-6">
               <h3 className="text-3xl font-bold">
                 Pronto para Implementar Soluções Completas?
@@ -262,7 +262,7 @@ const SolucoesComplementares = () => {
               <p className="text-xl opacity-90">
                 Descubra como as nossas soluções complementares podem transformar completamente o seu negócio
               </p>
-              <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+              <Button className="bg-white text-dark hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
                 Solicitar Consultoria
               </Button>
             </div>

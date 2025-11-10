@@ -67,14 +67,14 @@ const Conectividade = () => {
         {/* Conteúdo */}
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-white">
+            <h1 className="text-5xl md:text-6xl font-bold text-white" data-aos="fade-up">
               Conectamos pessoas
               <span className="block text-primary-glow">aos negócios e vice-versa</span>
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="300">
               Alcance a máxima confiança com as nossas ofertas de conectividade de rede.
             </p>
-            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+            <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all" data-aos="fade-up" data-aos-delay="500">
               Conheça as Soluções
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
@@ -130,19 +130,19 @@ const Conectividade = () => {
       {/* Services Grid */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div className="text-start space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Soluções de
-              <span className="block text-primary">Conectividade</span>
+              <span className="text-primary"> Conectividade</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-4xl">
               Oferecemos um ecossistema completo de soluções de conectividade para manter sua empresa sempre conectada.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {connectivityServices.map((service, index) => (
-              <Card key={index} className="card-corporate group hover:border-primary/30">
+              <Card key={index} className="card-corporate group hover:border-primary/30" data-aos="zoom-in" data-aos-delay={index * 150}>
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <div className="w-16 h-16 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -184,7 +184,7 @@ const Conectividade = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="card-corporate text-center">
+              <Card className="card-corporate text-center" data-aos="zoom-in">
                 <CardContent className="pt-8">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <Wifi className="w-8 h-8 text-white" />
@@ -194,7 +194,7 @@ const Conectividade = () => {
                 </CardContent>
               </Card>
 
-              <Card className="card-corporate text-center">
+              <Card className="card-corporate text-center" data-aos="zoom-in" data-aos-delay="350">
                 <CardContent className="pt-8">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <Network className="w-8 h-8 text-white" />
@@ -204,7 +204,7 @@ const Conectividade = () => {
                 </CardContent>
               </Card>
 
-              <Card className="card-corporate text-center">
+              <Card className="card-corporate text-center" data-aos="zoom-in" data-aos-delay="500">
                 <CardContent className="pt-8">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <Globe className="w-8 h-8 text-white" />
@@ -221,7 +221,7 @@ const Conectividade = () => {
       {/* CTA Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center bg-gradient-primary rounded-2xl p-12 text-white">
+          <div className="text-center bg-slate-900 rounded-2xl p-12 text-white" data-aos="zoom-out">
             <div className="max-w-2xl mx-auto space-y-6">
               <h3 className="text-3xl font-bold">
                 Pronto para Conectar o Futuro?
@@ -229,7 +229,7 @@ const Conectividade = () => {
               <p className="text-xl opacity-90">
                 Descubra como as nossas soluções de conectividade podem acelerar o crescimento da sua empresa
               </p>
-              <Button className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
+              <Button className="bg-white text-dark hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg hover:scale-105 transition-all">
                 Solicitar Proposta
               </Button>
             </div>
