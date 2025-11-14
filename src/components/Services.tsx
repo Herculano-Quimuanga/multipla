@@ -56,11 +56,11 @@ const Services = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground" data-aos="fade-up">
             Soluções Tecnológicas
             <span className="block text-primary">Completas</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="250">
             Oferecemos um portfólio abrangente de serviços tecnológicos para atender todas as necessidades da sua empresa,
             desde infraestrutura até desenvolvimento de aplicações customizadas.
           </p>
@@ -69,7 +69,7 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
-            <Card key={index} className="card-corporate group hover:border-primary/30">
+            <Card key={index} className="card-corporate group hover:border-primary/30" data-aos="fade-up" data-aos-delay={index * 150}>
               <CardHeader>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -98,7 +98,7 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-slate-900 rounded-2xl p-12 text-white">
+        <div className="text-center bg-slate-900 rounded-2xl p-12 text-white" data-aos="fade-up" data-aos-delay="300">
           <div className="max-w-2xl mx-auto space-y-6">
             <h3 className="text-3xl font-bold">
               Pronto para Transformar Seu Negócio?

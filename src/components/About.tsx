@@ -130,7 +130,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <Card key={index} className="card-corporate text-center group" data-aos="fade-right" data-aos-delay="500">
+              <Card key={index} className="card-corporate text-center group" data-aos="fade-up" data-aos-delay={index * 200}>
                 <CardContent className="p-2 space-y-4">
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
                     <value.icon className="w-8 h-8 text-white" />
@@ -145,7 +145,7 @@ const About = () => {
 
         {/* Team CTA */}
         <div className="mt-20">
-          <div className="bg-gradient-primary rounded-2xl p-12 text-center text-white">
+          <div className="bg-gradient-primary rounded-2xl p-12 text-center text-white" data-aos="zoom-in">
             <div className="max-w-2xl mx-auto space-y-6">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
                 <Zap className="w-8 h-8 text-white" />

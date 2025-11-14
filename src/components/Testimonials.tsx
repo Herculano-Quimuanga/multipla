@@ -33,12 +33,12 @@ const Testimonials = () => {
     <section id="depoimentos" className="py-20 section-gradient">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+        <div className="text-start space-y-4 mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground" data-aos="fade-up">
             O Que Dizem Nossos
             <span className="block text-primary">Clientes</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl" data-aos="fade-up" data-aos-delay="250">
             Mais de 500 empresas já transformaram seus negócios conosco.
             Veja os depoimentos de quem confia na nossa expertise.
           </p>
@@ -47,7 +47,7 @@ const Testimonials = () => {
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="card-corporate relative overflow-hidden">
+            <Card key={index} className="card-corporate relative overflow-hidden" data-aos="fade-up" data-aos-delay={index * 150}>
               <CardContent className="p-8">
                 {/* Quote Icon */}
                 <div className="absolute top-4 right-4 opacity-20">

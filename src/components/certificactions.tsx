@@ -34,6 +34,8 @@ const Certificactions = () => {
                             src={logo.src}
                             alt={`Logo ${index + 1}`}
                             className="img_certi transition-transform duration-300 hover:scale-105 opacity-75 hover:opacity-100"
+                            data-aos="zoom-in"
+                            data-aos-delay={index * 150}
                         />
                     ))}
                 </div>

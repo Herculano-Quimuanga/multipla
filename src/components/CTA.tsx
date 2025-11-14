@@ -11,13 +11,13 @@ const CTA = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight" data-aos="fade-up">
                 Pronto para Começar?
                 <span className="block text-primary-glow">
                   Vamos Conversar!
                 </span>
               </h2>
-              <p className="text-xl text-gray-200 max-w-2xl">
+              <p className="text-xl text-gray-200 max-w-2xl" data-aos="fade-up" data-aos-delay="250">
                 Entre em contato conosco hoje mesmo e descubra como podemos transformar
                 os desafios da sua empresa em oportunidades de crescimento.
               </p>
@@ -25,7 +25,7 @@ const CTA = () => {
 
             {/* Contact Options */}
             <div className="space-y-4">
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20" data-aos="fade-right" data-aos-delay="300">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-primary-glow to-accent rounded-full flex items-center justify-center">
@@ -39,7 +39,7 @@ const CTA = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20" data-aos="fade-right" data-aos-delay="400">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-primary-glow to-accent rounded-full flex items-center justify-center">
@@ -56,7 +56,7 @@ const CTA = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20" data-aos="fade-right" data-aos-delay="500">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-primary-glow to-accent rounded-full flex items-center justify-center">
@@ -84,7 +84,7 @@ const CTA = () => {
           </div>
 
           {/* Image */}
-          <div className="relative">
+          <div className="relative" data-aos="fade-left" data-aos-delay="600">
             <div className="relative">
               <img
                 src={consultationImage}

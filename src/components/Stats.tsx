@@ -33,17 +33,17 @@ const Stats = () => {
     <section className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-white" data-aos="fade-right" data-aos-delay="200">
             Resultados que Falam por Si
           </h2>
-          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-2xl mx-auto" data-aos="fade-left" data-aos-delay="250">
             Nossa trajetória é marcada por números que demonstram a qualidade e confiabilidade de nossos serviços
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
+            <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300" data-aos="fade-up" data-aos-delay={index * 150}>
               <CardContent className="p-8 text-center space-y-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-primary-glow to-accent rounded-full flex items-center justify-center mx-auto">
                   <stat.icon className="w-8 h-8 text-white" />
